@@ -1,0 +1,208 @@
+/* Reset CSS untuk menghilangkan margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk container utama */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bagian kiri: Formulir */
+.form-section {
+    width: 100%;
+    max-width: 580px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.form-group label img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.button-group button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Bagian kanan: Hasil Hitung BMI */
+.result-section {
+    width: 100%;
+    max-width: 580px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#bmiResult {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #e9f7ff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#downloadButton {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#downloadButton:hover {
+    background-color: #218838;
+}
+
+.result-section p {
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+}
+
+/* Responsive Design untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .form-section,
+    .result-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+    }
+
+    .button-group button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section h1 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .button-group button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .result-section h2 {
+        font-size: 18px;
+    }
+
+    #bmiResult {
+        font-size: 16px;
+    }
+
+    #downloadButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
