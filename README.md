@@ -20,6 +20,7 @@
 
 ## Struktur Proyek
 
+- `asset/`: Berisi aset-aset yang digunakan
 - `index.html`: Halaman utama yang menampilkan form input BMI dan hasil perhitungan.
 - `css/`
   - `style.css`: File CSS yang mengatur tampilan dan layout dari aplikasi web.
